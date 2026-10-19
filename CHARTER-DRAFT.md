@@ -8,7 +8,7 @@ The working group has since extended SCIM in three directions that shape the wor
 
 The working group will continue to maintain and evolve SCIM toward its core goal: managing identities across domains, reliably and interoperably, at scale.
 
-A primary focus is improving the interoperability of SCIM implementations. Optional features and differing interpretations of the specifications often require custom integration work, a cost that is multiplied when one client provisions to many service providers. The working group will reduce this through clarifications, profiles, and better capability discovery.
+A primary focus is improving the interoperability of SCIM implementations. Optional features, under-specified behavior, and differing interpretations of the specifications routinely require custom integration work, a cost that is multiplied when one client provisions to many service providers. The working group will reduce this through clarifications, profiles, registries, and better capability discovery.
 
 SCIM was originally designed to manage human identities. The working group will determine how the existing resource model and protocol apply to non-human identities — including devices, workloads, service accounts, and software agents — building on the approach taken in RFC 9944, and will define schema extensions where the core model proves insufficient. The working group will reuse the existing protocol and resource model wherever possible rather than defining parallel mechanisms for each identity type.
 
@@ -20,16 +20,17 @@ The scope of work for the SCIM WG is:
 
 * **Maintenance and revision of the core SCIM specifications** (RFC 7643 and RFC 7644), incorporating implementation experience, errata, interoperability feedback, and current security and privacy best practices. The revisions will incorporate the updates made by RFC 9865 and RFC 9967, and are intended for consideration at the Internet Standard level of specification maturity. The working group will produce the implementation and interoperability reports required to support that advancement.
 * **Revision of RFC 7642** (use cases, definitions, and requirements) to reflect current deployment patterns, including pull- and push-based provisioning, event- and signal-driven coordination, deletion and deactivation, and provisioning of non-human identities.
-* Improving interoperability between SCIM implementations, including:
+* **Improving interoperability between SCIM implementations**, including:
     * Profiles that constrain optional features into a common, required baseline for particular deployment contexts
-    * Clarifications to ambiguous or under-specified behavior in the core specifications
-    * Improved discovery of service provider capabilities, schemas, and permitted attribute values
+    * Clarifications to ambiguous or under-specified behavior in the core specifications, including PATCH semantics, filter support, error types and error semantics, idempotency and retry behavior, rate limiting, and bulk operations
+    * Improved discovery of service provider capabilities, supported schemas, permitted attribute values, and mutability constraints
 * **Establishment of IANA registries** for SCIM schema and extension URIs, resource types, service provider capability and feature identifiers, and error types, so that independently developed extensions are discoverable and do not collide.
-* Extensions to the SCIM protocol, including:
-    * Retrieval of large result sets and large multi-valued attributes, such as group memberships, at scale
-    * Asynchronous notification of resource changes and coordination of resources between domains
-    * Handling of deletion, deactivation, and other account lifecycle states
-* Schema extensions for identity types and attributes not covered by the core schema, including:
+* **Extensions to the SCIM protocol**, including:
+    * Retrieval of large result sets and large multi-valued attributes, such as group memberships, at scale, building on RFC 9865
+    * Incremental and delta retrieval of changes since a prior synchronization point
+    * Asynchronous notification of resource changes and coordination of resources between domains, building on RFC 9967 and RFC 8417
+    * Handling of deletion, deactivation, suspension, restoration, supersession, and other lifecycle states, for all SCIM resource types
+* **Schema extensions for identity types and attributes not covered by the core schema**, including:
     * Non-human identities, such as workloads, service accounts, and software agents, following the pattern established by RFC 9944 for devices
     * Roles, entitlements, and other authorization-related attributes
     * Organizational and multi-tenant structures
