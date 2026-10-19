@@ -1,10 +1,18 @@
-The System for Cross-domain Identity Management (SCIM) specifications define an HTTP-based protocol (RFC 7644) and schema (RFC 7643) for provisioning and managing identities across domains. Since its publication in 2015, SCIM has seen broad adoption.
+# SCIM Working Group Charter
 
-The working group will continue to maintain and evolve SCIM toward its core goals: managing identities across domains.
+## Charter
+
+The System for Cross-domain Identity Management (SCIM) specifications define an HTTP-based protocol (RFC 7644) and schema (RFC 7643) for provisioning and managing identities across domains. Since their publication in 2015, SCIM has become the dominant mechanism for cross-domain identity provisioning and has seen broad adoption across enterprise, cloud, and consumer deployments.
+
+The working group has since extended SCIM in three directions that shape the work ahead. RFC 9865 introduced cursor-based pagination to address retrieval of large result sets. RFC 9967 defined a profile for carrying SCIM provisioning changes as Security Event Tokens (SETs), establishing an event-driven alternative to polling. RFC 9944 defined device schema extensions, which demonstrated that the SCIM resource model can be applied to identities that are not people, and established a pattern for doing so. RFC 9865 and RFC 9967 update RFC 7643 and RFC 7644.
+
+The working group will continue to maintain and evolve SCIM toward its core goal: managing identities across domains, reliably and interoperably, at scale.
 
 A primary focus is improving the interoperability of SCIM implementations. Optional features and differing interpretations of the specifications often require custom integration work, a cost that is multiplied when one client provisions to many service providers. The working group will reduce this through clarifications, profiles, and better capability discovery.
 
 SCIM was originally designed for human identities. Its scope includes non-human identities, such as devices, workloads, and software agents, managed using the same protocol and resource model wherever possible.
+
+### Scope of work
 
 The scope of work for the SCIM WG is:
 
