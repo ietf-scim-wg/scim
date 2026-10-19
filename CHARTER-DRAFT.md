@@ -1,6 +1,6 @@
 The System for Cross-domain Identity Management (SCIM) specifications define an HTTP-based protocol (RFC 7644) and schema (RFC 7643) for provisioning and managing identities across domains. Since its publication in 2015, SCIM has seen broad adoption.
 
-The working group will continue to maintain and evolve SCIM toward its core goals: managing identities across domains.
+The working group will continue to maintain and evolve SCIM toward its core goal: managing identities across domains.
 
 A primary focus is improving the interoperability of SCIM implementations. Optional features and differing interpretations of the specifications often require custom integration work, a cost that is multiplied when one client provisions to many service providers. The working group will reduce this through clarifications, profiles, and better capability discovery.
 
@@ -8,7 +8,7 @@ SCIM was originally designed for human identities. Its scope includes non-human 
 
 The scope of work for the SCIM WG is:
 
-* Maintenance and revision of the core SCIM specifications (schema, and protocol), incorporating implementation experience, errata, interoperability feedback, and current security best practices
+* Maintenance and revision of the core SCIM specifications (RFC 7643 and RFC 7644), incorporating implementation experience, errata, interoperability feedback, and current security best practices
 * Improving interoperability between SCIM implementations, including:
     * Profiles that constrain optional features into a common, required baseline for particular deployment contexts
     * Clarifications to ambiguous or under-specified behavior in the core specifications
