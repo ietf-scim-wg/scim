@@ -18,7 +18,7 @@ Revisions of RFC 7643 and RFC 7644 will remain backward compatible with deployed
 
 The scope of work for the SCIM WG is:
 
-* Maintenance and revision of the core SCIM specifications (schema, and protocol), incorporating implementation experience, errata, interoperability feedback, and current security best practices
+* **Maintenance and revision of the core SCIM specifications** (RFC 7643 and RFC 7644), incorporating implementation experience, errata, interoperability feedback, and current security and privacy best practices. The revisions will incorporate the updates made by RFC 9865 and RFC 9967, and are intended for consideration at the Internet Standard level of specification maturity. The working group will produce the implementation and interoperability reports required to support that advancement.
 * Improving interoperability between SCIM implementations, including:
     * Profiles that constrain optional features into a common, required baseline for particular deployment contexts
     * Clarifications to ambiguous or under-specified behavior in the core specifications
