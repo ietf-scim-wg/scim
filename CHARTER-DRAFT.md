@@ -12,6 +12,8 @@ A primary focus is improving the interoperability of SCIM implementations. Optio
 
 SCIM was originally designed to manage human identities. The working group will determine how the existing resource model and protocol apply to non-human identities — including devices, workloads, service accounts, and software agents — building on the approach taken in RFC 9944, and will define schema extensions where the core model proves insufficient. The working group will reuse the existing protocol and resource model wherever possible rather than defining parallel mechanisms for each identity type.
 
+Revisions of RFC 7643 and RFC 7644 will remain backward compatible with deployed SCIM 2.0 implementations. The working group will not define a new major protocol version. Changes that cannot be made compatibly are out of scope unless accompanied by a discovery and negotiation mechanism that allows existing clients and service providers to continue to interoperate.
+
 ### Scope of work
 
 The scope of work for the SCIM WG is:
