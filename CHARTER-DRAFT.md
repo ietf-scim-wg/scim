@@ -37,9 +37,27 @@ The scope of work for the SCIM WG is:
 * **Security and privacy considerations for cross-domain provisioning**, including authentication and authorization between SCIM clients and service providers, scoped and least-privilege access, tenant isolation, data minimization in schema design, handling of sensitive and regulated attributes, protection against bulk extraction of directory data through SCIM interfaces, and auditability of provisioning operations.
 * **Profiling the relationship between SCIM and other identity-related protocols and frameworks**, such as OAuth 2.0, OpenID Connect, and the Shared Signals Framework, including how SCIM clients and service providers authenticate to each other and how SCIM provisioning state relates to session and credential lifecycle.
 
+### Adoption criteria
+
+Interest in extending SCIM substantially exceeds the working group's capacity. The working group will adopt extension work only where there is a demonstrated deployment need, documented implementation experience or committed implementers, and no existing SCIM mechanism that already addresses the requirement. Extensions must use the SCIM extension model and must not require incompatible changes to the core protocol. Work that primarily serves a single vendor or a single deployment is better pursued outside the working group.
+
+### Out of scope
+
 The following are out of scope for the working group:
 
-* Authentication protocols, credential issuance, and authorization policy languages, except as needed to describe how SCIM interacts with them
-* Defining new transport protocols other than HTTP
+* Authentication protocols, credential issuance, and authorization policy languages or decision protocols, except as needed to describe how SCIM interacts with them
+* Identity proofing, verification, and assurance
+* Defining new transport protocols other than HTTP, or new serializations other than JSON
+* A replacement or general-purpose successor to LDAP or other directory access protocols
+* A canonical human-resources or organizational data ontology beyond what provisioning interoperability requires
+* Agent-to-agent communication, tool invocation, and agent capability description protocols; only the representation and lifecycle management of such identities is in scope
 
-The working group will coordinate with other IETF working groups and external organizations working on related identity and provisioning efforts, such as the OAuth and SECEVENT working groups, the OpenID Foundation, and the FIDO Alliance, to avoid duplication and ensure compatibility.
+### Coordination
+
+The working group will coordinate with other IETF working groups and external organizations working on related identity and provisioning efforts to avoid duplication and ensure compatibility. Within the IETF this includes the OAUTH, SECEVENT, WIMSE, and HTTPAPI working groups. Externally this includes the OpenID Foundation — in particular its Shared Signals and IPSIE working groups — and the FIDO Alliance.
+
+The working group also draws on implementation and interoperability feedback from the independent SCIM implementer community, including interoperability testing events and the materials at scim.cloud. All working group consensus is determined on the scim@ietf.org mailing list.
+
+### Working practices
+
+Working group documents are developed on GitHub under https://github.com/ietf-scim-wg. GitHub is used for issue tracking and editorial collaboration; consensus is determined on the working group mailing list. The working group will recharter or close once the chartered deliverables are complete.
