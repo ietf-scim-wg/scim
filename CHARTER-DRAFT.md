@@ -34,7 +34,8 @@ The scope of work for the SCIM WG is:
     * Non-human identities, such as workloads, service accounts, and software agents, following the pattern established by RFC 9944 for devices
     * Roles, entitlements, and other authorization-related attributes
     * Organizational and multi-tenant structures
-* Profiling the relationship between SCIM and other identity-related protocols and frameworks, such as OAuth 2.0, OpenID Connect, and the Shared Signals Framework, including how SCIM clients and service providers authenticate to each other
+* **Security and privacy considerations for cross-domain provisioning**, including authentication and authorization between SCIM clients and service providers, scoped and least-privilege access, tenant isolation, data minimization in schema design, handling of sensitive and regulated attributes, protection against bulk extraction of directory data through SCIM interfaces, and auditability of provisioning operations.
+* **Profiling the relationship between SCIM and other identity-related protocols and frameworks**, such as OAuth 2.0, OpenID Connect, and the Shared Signals Framework, including how SCIM clients and service providers authenticate to each other and how SCIM provisioning state relates to session and credential lifecycle.
 
 The following are out of scope for the working group:
 
