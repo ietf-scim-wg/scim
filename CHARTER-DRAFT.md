@@ -13,6 +13,7 @@ The scope of work for the SCIM WG is:
     * Profiles that constrain optional features into a common, required baseline for particular deployment contexts
     * Clarifications to ambiguous or under-specified behavior in the core specifications
     * Improved discovery of service provider capabilities, schemas, and permitted attribute values
+    * Expression of schema semantics that the current schema representation leaves ambiguous or cannot convey to clients
 * Extensions to the SCIM protocol, including:
     * Retrieval of large result sets and large multi-valued attributes, such as group memberships, at scale
     * Asynchronous notification of resource changes and coordination of resources between domains
