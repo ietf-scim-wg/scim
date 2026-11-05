@@ -15,6 +15,7 @@ The scope of work for the SCIM WG is:
     * Improved discovery of service provider capabilities, schemas, and permitted attribute values
 * Extensions to the SCIM protocol, including:
     * Retrieval of large result sets and large multi-valued attributes, such as group memberships, at scale
+    * Exchange of SCIM-schematized data that does not rely on the SCIM protocol's request and response semantics
     * Asynchronous notification of resource changes and coordination of resources between domains
     * Handling of deletion, deactivation, and other account lifecycle states
 * Schema extensions for identity types and attributes not covered by the core schema, including:
