@@ -4,7 +4,7 @@ The working group will continue to maintain and evolve SCIM toward its core goal
 
 A primary focus is improving the interoperability of SCIM implementations. Optional features and differing interpretations of the specifications often require custom integration work, a cost that is multiplied when one client provisions to many service providers. The working group will reduce this through clarifications, profiles, and better capability discovery.
 
-SCIM was originally designed for human identities. Its scope includes non-human identities, such as devices, workloads, and software agents, managed using the same protocol and resource model wherever possible.
+SCIM was originally designed for human identities. Its scope includes physical devices and non-human identities, such as workloads, service principals, applications, and software agents, managed using the SCIM protocol, with new resource types and schema extensions where the core resources do not fit.
 
 The scope of work for the SCIM WG is:
 
