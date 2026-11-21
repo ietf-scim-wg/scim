@@ -16,7 +16,7 @@ The scope of work for the SCIM WG is:
     * Expression of schema semantics that the current schema representation leaves ambiguous or cannot convey to clients
 * Extensions to the SCIM protocol, including:
     * Retrieval of large result sets, and retrieval and modification of large multi-valued attributes, such as group memberships, at scale
-    * Asynchronous notification of resource changes and coordination of resources between domains
+    * Asynchronous processing of SCIM operations, and propagation of resource changes between domains
     * Handling of deletion, deactivation, and other resource lifecycle states
 * Schema extensions for identity types and attributes not covered by the core schema, including:
     * Non-human identities, such as workloads, service principals, applications, and software agents
