@@ -20,7 +20,7 @@ The scope of work for the SCIM WG is:
     * Handling of deletion, deactivation, and other resource lifecycle states
 * Schema extensions for identity types and attributes not covered by the core schema, including:
     * Non-human identities, such as workloads, service principals, applications, and software agents
-    * Roles, entitlements, and other authorization-related attributes
+    * Roles, entitlements, and other authorization-related attributes, including discovery of the roles and entitlements available for assignment
     * Organizational and multi-tenant structures
     * Relationships between resources, such as ownership of non-human identities and groups by the people or organizations accountable for them
 * Profiling the relationship between SCIM and other identity-related protocols and frameworks, such as OAuth 2.0, OpenID Connect, and the Shared Signals Framework, including how SCIM clients and service providers authenticate to each other
