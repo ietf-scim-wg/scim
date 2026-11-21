@@ -24,6 +24,7 @@ The scope of work for the SCIM WG is:
     * Roles, entitlements, and other authorization-related attributes, including discovery of the roles and entitlements available for assignment
     * Organizational and multi-tenant structures
     * Relationships between resources, such as ownership of non-human identities and groups by the people or organizations accountable for them
+* Securing access to external resources referenced by SCIM attributes, such as profile photos
 * Profiling the relationship between SCIM and other identity-related protocols and frameworks, such as OAuth 2.0, OpenID Connect, and the Shared Signals Framework, including how SCIM clients and service providers authenticate to each other
 
 The following are out of scope for the working group:
